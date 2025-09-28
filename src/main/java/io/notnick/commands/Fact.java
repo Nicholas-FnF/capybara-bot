@@ -28,8 +28,7 @@ public class Fact extends ListenerAdapter {
             // Get the fact at the random index
             JSONObject jsonObject = facts.getJSONObject(randomIndex);
 
-            String fact = jsonObject.getString("fact")
-                    .replaceAll("\\s*\\(variation \\d+\\)$", "");
+            String fact = jsonObject.getString("fact");
 
             int id = jsonObject.getInt("id");
 
